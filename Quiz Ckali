@@ -1,0 +1,64 @@
+#include <stdio.h>
+/*
+* Programmiamo l-inizio del gioco..
+*/
+
+int main (){
+int num;
+int punti = 0;
+int ultima = 1;
+
+while(ultima == 1) {
+printf("BEEENNNVEEEENNUUTTTIIIIII A QUESTO NON BELLISSIMO QUIZ! POCHE DOMANDE E TANTE RISPOSTE!\n");
+printf("Premi 1  per iniziare il tuo gioco! oppure 0 per uscire!\n");
+scanf ("%d",&num);
+
+ if(num== 0){
+        ultima= 0;
+        printf("exit");}
+if(num== 1){ 
+
+        printf("Quanti erano i sette nani?\n");
+        printf("\n\n");
+        printf(" 1) 5\n 2) 7\n 3) 81\n\n");
+
+        scanf ("%d",&num);
+        if(num== 2){
+
+        printf("WOW SEI FORTISSIMO\n OMMIODDIO HAI FATTO QUESTO BELLISSIMO PUNTO\n\n");
+        punti++;
+        printf("Questi sono i tuoi punti:%d\n\n",punti);
+} else{
+        printf("scemo scemo scemo\n\n");}
+
+        printf("Quante dita ci sono in una mano?\n");
+        printf("\n\n");
+        printf(" 1) 12\n 2) 45\n 3) 10\n\n");
+
+        scanf ("%d",&num);
+        if(num== 3){
+
+        printf("MA LE SAI TUTTE!!\n EEEEEEEE....PUNTOOO\n\n");
+        punti++;
+        printf("Questi sono i tuoi punti:%d\n\n",punti);
+} else{
+        printf("meno scemo di prima\n\n");}
+         printf("Quanti dromedari sono cammelli?\n");
+        printf("\n\n");
+        printf(" 1) Termosifone\n 2) 0\n 3) 2\n\n");
+
+        scanf ("%d",&num);
+        if(num== 2){
+
+        printf("GRANDISSSSSIMO\n PLIN PLIN PLIN SUPER PUNTO\n\n");
+        punti++;   
+        printf("Questi sono i tuoi punti:%d\n\n",punti); 
+} else{ 
+        printf("all'ultimo, che pippaccia\n\n");}
+        printf("Questi sono i tuoi punti finali: %d\n\n",punti);
+        }
+punti= 0;
+        }
+return 0;
+}
+
