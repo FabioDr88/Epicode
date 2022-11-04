@@ -1,0 +1,100 @@
+#include <stdio.h>
+/*
+* Programmiamo l-inizio del gioco..
+*/
+
+int main (){
+int num;
+int punti = 0;
+int ultima = 1;
+int omino; 
+char nome[10];
+
+while(ultima == 1) {
+printf("BEEENNNVEEEENNUUTTTIIIIII A QUESTO NON BELLISSIMO QUIZ! POCHE DOMANDE E TANTE RISPOSTE!\n");
+printf("Premi 1  per iniziare il tuo gioco! oppure 0 per uscire!\n");
+scanf ("%d",&num);
+printf("Ciao amicone, dimmi il tuo nome: ");
+rewind(stdin);
+fgets(nome,10,stdin);
+printf("Ciao %s Iniziamo la nostra bellissima partita",nome);
+
+ if(num== 0){
+        ultima= 0;
+        printf("exit");}
+if(num== 1){ 
+    do{
+		rewind(stdin);	
+        printf("Quanti erano i sette nani?\n");
+        printf("\n\n");
+        printf(" 1) 5\n 2) 7\n 3) 81\n\n");
+
+        omino = scanf ("%d",&num);
+        if(num== 2){
+
+        printf("WOW SEI FORTISSIMO\n OMMIODDIO HAI FATTO QUESTO BELLISSIMO PUNTO\n\n");
+        punti++;
+        printf("Questi sono i tuoi punti:%d\n\n",punti);
+        
+        } else if (num == 3 || num == 1) { 
+
+        printf("scemo scemo scemo\n\n");
+     	} else {
+		printf("\n NNOOPPE \n\n");
+		} 	
+									
+								
+   	} while ((num < 1 || num > 3) || omino == 0);
+		// Ciao sono la seconda domanda
+		
+		 do{
+		rewind(stdin);	
+        printf("Quante dita ci sono in una mano?\n");
+        printf("\n\n");
+        printf(" 1) 12\n 2) 45\n 3) 10\n\n");
+
+        omino = scanf ("%d",&num);
+        if(num== 3){
+
+        printf("MA LE SAI TUTTE!!\n EEEEEEEE....PUNTOOO\n\n");
+        punti++;
+        printf("Questi sono i tuoi punti:%d\n\n",punti);
+        
+        } else if (num == 3 || num == 1) { 
+
+        printf("scemo scemo scemo\n\n");
+     	} else {
+		printf("\n NNOOPPE \n\n");
+		} 	
+									
+								
+   	} while ((num < 1 || num > 3) || omino == 0); 
+	   //Ciao sono la terza e ultima domanda
+	    do{
+		rewind(stdin);	
+        printf("Quanti dromedari sono cammelli?\n");
+        printf("\n\n");
+        printf(" 1) Termosifone\n 2) 0\n 3) 2\n\n");
+
+        omino = scanf ("%d",&num);
+        if(num== 2){
+
+        printf("GRANDISSSSSIMO\n PLIN PLIN PLIN SUPER PUNTO\n\n");
+        punti++;
+        printf("Questi sono i tuoi punti:%d\n\n",punti);
+        
+        } else if (num == 3 || num == 1) { 
+
+        printf("all'ultimo, che pippaccia\n\n");
+     	} else {
+		printf("\n NNOOPPE \n\n");
+		printf("Questi sono i tuoi punti finali: %d\n\n",punti);
+		} 	
+									
+								
+   	} while ((num < 1 || num > 3) || omino == 0);
+
+}}
+
+return 0;
+}
