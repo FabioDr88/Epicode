@@ -82,12 +82,12 @@ void dividi ()
     float a,b = 0; 
     
     printf ("Inserisci il numeratore:");
-    ctr1 = scanf ("%f", &a);
+    ctr1 = scanf ("%f", &a); // qui abbiamo corretto il fattore %d con il fattore %f
 	printf ("Inserisci il denumeratore:");  
-	ctr2 = scanf ("%f", &b);
-    	if(ctr1 == 0 || ctr2 == 0) {
+	ctr2 = scanf ("%f", &b);//qui anche la correzione di %d in %f
+    	if(ctr1 == 0 || ctr2 == 0) {//BLocco per la la digitare correttamente un numero
 		printf ("Solo numeri \n\n");
-		rewind(stdin);	
+		rewind(stdin);	//ci permetterà di tornare in cima
 		}
 	else{
 	float divisione = a / b;
@@ -102,6 +102,6 @@ void ins_string ()
 	char stringa[10];
         printf ("Inserisci la stringa:");
         fgets (stringa,10, stdin);
-        printf("Hai inserito la seguenza stringa: %s",stringa);
+        printf("Hai inserito la seguenza stringa: %s",stringa); // qui è inserito il blocco dei caratteri
        rewind(stdin);
 }
