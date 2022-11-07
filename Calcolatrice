@@ -1,0 +1,20 @@
+import math # Per poter usare il PiGreco
+def quadratoInput(): # Funzione del perimetro quadrato
+  x = int(input("Lato del quadrato: "))
+  print('Risultato: ',x*4)
+def cerchioInput(): #Funzione Circonferenza del cerchio
+  y = int(input("Raggio del cerchio: "))
+  print("Il perimetro del cerchio: ", y*math.pi*2)
+def rettangoloInput(): # Funzione perimetro Rettangolo
+  b = int(input("Base del rettangolo: "))
+  h = int(input("Altezza: "))
+  print("Il perimetro: ",b*2+h*2)
+menu = input("Cosa vuoi calcolare??\n\n(1) > QUADRATO\n\n(2) > CERCHIO\n\n(3) > RETTANGOLO\n\nInserisci qui la tua scelta >>> ")
+if menu == '1':
+  quadratoInput()
+elif menu == '2':
+  cerchioInput()
+elif menu == '3':
+  rettangoloInput()
+else:
+  print("Inserisci un numero")
